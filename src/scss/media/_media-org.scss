@@ -3,15 +3,19 @@
     padding-bottom: 23px;
     margin-top: 0;
     background-image: none;
+    display: none;
     .section-title {
         margin-bottom: 15px;
     }
     &-item {
         max-width: fit-content;
         margin-bottom: 34px;
-        margin-right: 32px;
-        img {
-            max-width: 80%;
+        margin-right: 16px;
+        &:nth-child(4n) {
+            margin-right: 16px;
         }
+    }
+    &-mob {
+        display: block;
     }
 }

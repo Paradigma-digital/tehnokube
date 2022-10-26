@@ -9,6 +9,7 @@
 .btn {
     background-color: #fff;
     transition: all .3s;
+    color: $text-color;
     &:hover {
         background-color: #000;
         color: #fff;
@@ -56,6 +57,7 @@
         outline: none;
         text-align: left;
         transition: all 0.5s linear;
+        color: $text-color;
         &.is-open:after {
             transform: translateY(23%) rotate(90deg);
         }

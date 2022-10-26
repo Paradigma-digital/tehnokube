@@ -98,7 +98,6 @@
             
         }
         &-icon {
-            max-width: 541px;
             .icon {
                 max-width: fit-content;
                 text-align: center;
@@ -114,6 +113,10 @@
         padding-bottom: 88px;
         background-image: url('../img/timetable/bg-1440.svg');
         background-position: top 100px center;
+        &-title {
+            margin-bottom: 38px;
+            font-size: 30px;
+        }
         &-desc {
             margin-bottom: 25px;
             max-width: 783px;
@@ -166,12 +169,19 @@
         &-bottom {
             .timetable-subtitle {
                 margin-bottom: 40px;
+                max-width: 395px;
             }
+            max-width: 395px;
         } 
         &-final {
             padding: 13px 23px 19px;
             max-width: 395px;
             align-items: center;
+            &-text {
+                margin-top: 14px;
+                font-size: 18px;
+                line-height: 21px;
+            }
         }
         &-img {
             margin-right: 24px;
@@ -277,10 +287,15 @@
         }
         &-item {
             padding: 16px 25px 18px;
+            max-width: calc(50% - 19.5px);
+            margin-bottom: 42px;
         }
         &-img {
-            right: 20px;
-            top: 27px;
+            right: 25px;
+            bottom: 25px;
+            img {
+                max-height: 65px;
+            }
         }
         &-title {
             margin-bottom: 9px;
@@ -289,9 +304,8 @@
         }
         &-desc {
             max-width: 335px;
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 120%;
+            font-size: 16px;
+            line-height: 19px;
         }
     }
 
@@ -586,6 +600,10 @@
             line-height: 29px;
             font-weight: 500;
             color: #0077FF;
+            &:hover {
+                background-color: transparent;
+                color: #0077FF;
+            }
         }
     }
     .container {
