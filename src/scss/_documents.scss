@@ -1,0 +1,44 @@
+.documents {
+    padding-top: 182px;
+    padding-bottom: 161px;
+    background-image: url('../img/documents/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    .section {
+        &-title {
+            margin-bottom: 85px;
+            color: #fff;
+        }
+    }
+    &-list {
+        margin-bottom: 169px;
+        display: flex;
+        flex-wrap: wrap;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &-item {
+        margin-bottom: 41px;
+        min-height: 87px;
+        width: 100%;
+        max-width: 33.33%;
+        
+        a {
+            max-width: 400px;
+            display: inline-block;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 120%;
+            color: #fff;
+            transition: all .3s;
+            &:hover {
+                color: #0077FF;
+            }
+            &:active {
+                color: #fff;
+            }
+        }
+    }
+}

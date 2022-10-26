@@ -1,0 +1,44 @@
+.capability {
+    padding-top: 134px;
+    padding-bottom: 137px;
+    background-image: url('../img/capability/bg-mob.jpg');
+    background-size: auto 100%;
+    background-position: 49.6% top;
+    .section {
+        &-title {
+            margin-bottom: 34px;
+        }
+    }
+    &-list {
+        flex-direction: column;
+    }
+    &-item {
+        padding: 14.47px 61px 20.44px 18.12px;
+        margin-bottom: 12px;
+        max-width: 100%;
+        &:last-child {
+            margin-bottom: 0;
+            &::before {
+                display: none;
+            }
+        }
+    }
+    &-title {
+        margin-bottom: 7px;
+        font-size: 16px;
+    }
+    &-desc {
+        max-width: 235px;
+        font-size: 16px;
+        line-height: 120%;
+    }
+    &-img {
+        top: 16px;
+        right: 16.42px;
+        max-width: 47px;
+        max-height: 44px;
+        img {
+            max-height: 44px;
+        }
+    }
+}

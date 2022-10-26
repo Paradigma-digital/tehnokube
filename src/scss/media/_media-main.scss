@@ -1,0 +1,74 @@
+.main {
+    padding-top: 167px;
+    padding-bottom: 172px;
+    background-image: url('../img/main/bg-mob.jpg');
+    background-size: auto 100%;
+    background-position: center;
+    .page {
+        &-title {
+            position: relative;
+            margin-bottom: 6.5px;
+            max-width: 315px;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 30px;
+                top: -27px;
+                width: 14px;
+                height: 14px;
+                background-color: #00EAFF;
+            }
+            svg {
+                max-width: 315px;
+                rect {
+                    display: none;
+                }
+            }
+        }
+    }
+    &-subtitle {
+        margin-bottom: 32px;
+        font-size: 16px;
+    }
+    &-date {
+        margin-bottom: 81px;
+        &-mounth {
+            padding: 2px 11px 4px 9px;
+            font-size: 28px;
+            border-radius: 7.49557px;
+            border-width: 2px;
+        }
+        &-arrow {
+            width: 100%;
+            height: 16px;
+            max-width: 72px;
+            background-image: url('../img/main/arr.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            svg {
+                display: none;
+            }
+        }
+        &-hour {
+            font-size: 28px;
+        }
+    }
+    &-text {
+        margin-bottom: 21px;
+        font-size: 16px;
+    }
+    &-icon {
+        margin-bottom: 38px;
+        .main {
+            &-bottom {
+                display: none;
+            }
+        }
+    }
+    &-bottom {
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+    }
+}

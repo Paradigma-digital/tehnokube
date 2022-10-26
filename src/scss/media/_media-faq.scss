@@ -1,0 +1,57 @@
+.faq {
+    padding-top: 0;
+    padding-bottom: 56px;
+    .section {
+        &-title {
+            margin-bottom: 27px;
+        }
+    }
+    &-title {
+        margin-bottom: 9px;
+        font-size: 16px;
+    }
+    &-desc {
+        font-size: 16px;
+    }
+    &-content {
+        flex-wrap: wrap;
+    }
+    &-list {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+    &-item {
+        margin-bottom: 12px;
+        &.dark {
+            padding: 17.5px 19px 20px;
+            margin-bottom: 21px;
+        }
+    }
+    
+}
+
+.acc {
+    &-container {
+        padding: 14px 50px 14px 14px;
+    }
+    &-btn {
+        font-size: 16px;
+        line-height: 19px;
+        &::after {
+            right: 16px;
+            top: 16px;
+            width: 17px;
+            height: 12px;
+        }
+    }
+    &-content {
+        &.active {
+            margin-top: 12px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+}

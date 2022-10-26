@@ -1,0 +1,96 @@
+.materials {
+    padding-top: 16px;
+    padding-bottom: 150px;
+    background-image: url('../img/materials/bg.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    .section {
+        &-title {
+            margin-bottom: 0;
+        }
+    }
+    &-item {
+        padding: 40px 40px 58px;
+        box-shadow: 0px 5px 65px rgba(0, 0, 0, 0.05), 0px 1.92593px 20.7037px rgba(0, 0, 0, 0.0303704), 0px 0.407407px 5.2963px rgba(0, 0, 0, 0.0196296);
+        background-color: #fff;
+    }
+    &-top {
+        margin-bottom: 36px;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 120%;
+        color: $text-color;
+        span {
+            display: block;
+            color: hsl(212, 99%, 50%);
+        }
+    }
+    &-btns {
+        display: flex;
+        flex-direction: column;
+        a {
+            margin-bottom: 21px;
+            padding: 25px;
+            width: 100%;
+            max-width: 320px;
+            border: 2px solid #DEDEDE;
+            display: inline-block;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 30px;
+            color: $text-color;
+            text-align: center;
+            transition: all .3s;
+            &:hover {
+                background-color: #000;
+                color: #fff;
+                border-color: #000;
+            }
+        }
+    }
+    &-slider {
+        position: relative;
+        &-container {
+            margin-left: -35px;
+            padding: 45px;
+            padding-top: 71px;
+            overflow: hidden;
+        }
+        .swiper {
+            &-slide {
+                transition: all .3s;
+                // &.swiper-slide-next + .swiper-slide + .swiper-slide {
+                //     opacity: 0;
+                // }
+            }
+        }
+    }
+    &-prev, &-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -53px;
+        z-index: 99;
+        background-color: #fff;
+        border-radius: 100px;
+        cursor: pointer;
+        svg {
+            path {
+                transition: all .3s;
+            }
+        }
+        svg:hover {
+            path {
+                stroke: #fff;
+                &:first-child {
+                    stroke: #000;
+                    fill: #000;
+                }
+            }
+        }
+    }
+    &-next {
+        left: auto;
+        right: -53px;
+    }
+}

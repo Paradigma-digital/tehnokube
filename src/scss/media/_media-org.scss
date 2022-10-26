@@ -1,0 +1,17 @@
+.org {
+    padding-top: 55px;
+    padding-bottom: 23px;
+    margin-top: 0;
+    background-image: none;
+    .section-title {
+        margin-bottom: 15px;
+    }
+    &-item {
+        max-width: fit-content;
+        margin-bottom: 34px;
+        margin-right: 32px;
+        img {
+            max-width: 80%;
+        }
+    }
+}

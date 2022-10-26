@@ -1,0 +1,31 @@
+.choice {
+    padding-top: 125px;
+    padding-bottom: 115px;
+    background-image: url('../img/choice/bg-mob.jpg');
+    background-size: auto 100%;
+    background-position: center top;
+    &-title {
+        margin-bottom: 12px;
+        font-size: 28px;
+    }
+    &-item {
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+    &-btn {
+        background-color: #fff;
+        width: 100%;
+        max-width: 100%;
+    }
+    &-img {
+        display: none;
+        &-mob {
+            margin: 0px -30px;
+            margin-bottom: 49px;
+            display: block;
+        }
+    }
+    &-bottom {
+        margin-top: 42px;
+    }
+}

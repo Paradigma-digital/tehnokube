@@ -1,0 +1,80 @@
+.timetable {
+    padding-top: 37px;
+    padding-bottom: 46px;
+    background-image: none;
+    &-desc {
+        margin-bottom: 15px;
+        line-height: 120%;
+        font-size: 14px;
+    }
+    &-title {
+        margin-bottom: 55px;
+        margin-top: 28px;
+        font-size: 28px;
+        line-height: 110%;
+    }
+    &-subtitle {
+        margin-bottom: 9px;
+        font-size: 28px;
+    }
+    &-round {
+        margin-bottom: 55.5px;
+        flex-direction: column;
+        &-title {
+            font-size: 18px;
+        }
+        &-item {
+            margin-bottom: 23px;
+            max-width: 100%;
+            &:first-child {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+        &-small {
+            margin-bottom: 6px;
+            font-size: 16px;
+        }
+        &-date {
+            margin-bottom: 9px;
+            font-size: 18px;
+        }
+        &-hour {
+            font-size: 16px;
+        }
+        &-list {
+            padding: 10px 19px 16px;
+            box-shadow: 0px 3.16265px 41.1144px rgba(0, 0, 0, 0.05);
+            
+            &::before {
+                bottom: 7px;
+                height: 83px;
+            }
+        }
+    }
+    &-bottom {
+        text-align: left;
+        .timetable-subtitle {
+            margin-bottom: 22px;
+            text-align: left;
+        }
+    }
+    &-final {
+        padding: 14px 18px;
+    }
+    &-img {
+        margin-right: 28px;
+    }
+    &-info {
+        font-size: 28px;
+        svg {
+            max-height: 53px;
+        }
+        span {
+            margin-top: 11px;
+            font-size: 16px;
+        }
+    }
+    
+}

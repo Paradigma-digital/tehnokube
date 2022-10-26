@@ -1,0 +1,38 @@
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 74px;
+    &-log {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    &-btn {
+        padding: 10px;
+        margin-right: 26px;
+        width: 100%;
+        max-width: 215px;
+        display: inline-block; 
+        font-weight: 500;
+        font-size: 21.3334px;
+        line-height: 27px;
+        background-color: #fff;
+        color: #000;
+        text-align: center;
+        border: 3px solid #fff;
+        &:last-child {
+            margin-right: 0;
+        }
+        &_mod {
+            background-color: transparent;
+            color: #fff;
+        }
+    }
+}
+
+.burger-menu {
+    display: none;
+}

@@ -1,0 +1,65 @@
+.capability {
+    padding-top: 160px;
+    padding-bottom: 320px;
+    background-image: url('../img/capability/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    .section {
+        &-title {
+            margin-bottom: 67px;
+            color: #fff;
+        }
+    }
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &-item {
+        position: relative;
+        padding: 24px 36px 55px;
+        width: 100%;
+        max-width: calc(50% - 39px);
+        margin-bottom: 63px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(28.6667px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: #fff;
+        &:last-child {
+            &::before {
+                content: '';
+                position: absolute;
+                right: -103px;
+                top: -25px;
+                width: 100%;
+                height: 100%;
+                max-width: 160px;
+                max-height: 160px;
+                // background: rgba(255, 255, 255, 0.1);
+                // backdrop-filter: blur(13.674px);
+                // border: 1px solid rgba(255, 255, 255, 0.1);
+                background-image: url('../img/capability/kub.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+    &-title {
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 110%;
+    }
+    &-desc {
+        max-width: 507px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+    }
+    &-img {
+        position: absolute;
+        right: 37px;
+        bottom: 39px;
+    }
+}

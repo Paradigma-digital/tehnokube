@@ -1,0 +1,94 @@
+.main {
+    padding-top: 260px;
+    padding-bottom: 390px;
+    background-image: url('../img/main/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-subtitle {
+        margin-bottom: 25px;
+        max-width: 958px;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 120%;
+        color: #fff;
+    }
+    &-date {
+        margin-bottom: 66px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1110px;
+        width: 100%;
+        &-mounth {
+            position: relative;
+            padding: 14px 35px 19px 27px;
+            border: 3px solid #FFFFFF;
+            border-radius: 22px;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 110%;
+            color: #fff;
+            &::before {
+                content: '';
+                position: absolute;
+                left: -26px;
+                top: -7px;
+                width: 36px;
+                height: 36px;
+                background-color: #00EAFF;
+            }
+        }
+        &-hour {
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 110%;
+            color: #fff;
+        }
+    }
+    &-text {
+        margin-bottom: 44px;
+        max-width: 533px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+    &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1249px;
+        .main-bottom {
+            display: block;
+        }
+    }
+    &-bottom {
+        margin-right: 76px;
+        display: none;
+    }
+    &-btn {
+        padding: 17.5px 56px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 25px;
+        background-color: #fff;
+        color: $text-color;
+    }
+    .page {
+        &-title {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 18px;
+                right: 138px;
+                width: 80px;
+                height: 80px;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(6.88px);
+                border: rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+}

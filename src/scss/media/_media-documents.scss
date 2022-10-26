@@ -1,0 +1,25 @@
+.documents {
+    padding-top: 134px;
+    padding-bottom: 115px;
+    background-image: url('../img/documents/bg-mob.jpg');
+    background-size: auto 100%;
+    background-position: 49% center;
+    .section {
+        &-title {
+            margin-bottom: 22px;
+        }
+    }
+    &-list {
+        margin-bottom: 30px;
+    }
+    &-item {
+        max-width: 100%;
+        margin-bottom: 20px;
+        min-height: auto;
+        a {
+            max-width: 270px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+}

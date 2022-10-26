@@ -1,0 +1,35 @@
+.materials {
+    padding-top: 47px;
+    padding-bottom: 36px;
+    background-image: none;
+    overflow: hidden;
+    .section {
+        &-title {
+            margin-bottom: 33px;
+        }
+    }
+    &-item {
+        padding: 23px;
+        box-shadow: 0px 2.98458px 38.7996px rgba(0, 0, 0, 0.05), 0px 1.14962px 12.3584px rgba(0, 0, 0, 0.0303704), 0px 0.243188px 3.16145px rgba(0, 0, 0, 0.0196296);
+    }
+    &-top {
+        margin-bottom: 36px;
+        font-size: 18px;
+    }
+    &-btns {
+        a {
+            padding: 13px 0;
+            font-size: 20px;
+        }
+    }
+    &-slider {
+        &-container {
+            overflow: visible;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    &-prev, &-next {
+        display: none;
+    }
+}

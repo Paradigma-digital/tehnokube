@@ -1,0 +1,29 @@
+.org {
+    padding-top: 296px;
+    padding-bottom: 68px;
+    margin-top: -172px;
+    background-image: url('../img/org/bg.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    .section {
+        &-title {
+            margin-bottom: 43px;
+        }
+    }
+    &-list {
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &-item {
+        margin-right: 99px;
+        margin-bottom: 57px;
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+    }
+}
