@@ -422,21 +422,23 @@
         margin-top: -136px;
         background-image: url('../img/org/bg-1440.svg');
         background-size: 507px 396px;
+        display: none;
         .section {
             &-title {
                 margin-bottom: 44px;
             }
         }
+        &-md {
+            display: block;
+        }
         &-item {
             display: flex;
-            width: 100%;
-            max-width: calc(25% - 70px);
-            margin-right: 70px;
-            margin-bottom: 84px;
-            img {
-                max-height: 86px;
-                object-fit: contain;
-            }
+            margin-right: 65px;
+            margin-bottom: 42px;
+            // img {
+            //     max-height: 86px;
+            //     object-fit: contain;
+            // }
         }
     }
 

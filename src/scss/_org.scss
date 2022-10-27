@@ -5,7 +5,7 @@
     background-image: url('../img/org/bg.svg');
     background-repeat: no-repeat;
     background-position: right top;
-    &-mob {
+    &-mob, &-md {
         display: none;
     }
     .section {
