@@ -28,7 +28,7 @@
         }
     }
     .container {
-        max-width: 957px;
+        max-width: 981px;
     }
     .header {
         padding-top: 62px;
@@ -202,7 +202,8 @@
 
 
     .choice {
-        padding-top: 144px;
+        padding-top: 158px;
+        padding-bottom: 159px;
         background-image: url('../img/choice/bg-1440.jpg');
         .container {
             &::before {
@@ -211,15 +212,20 @@
         }
         &-title {
             margin-bottom: 14px;
+            max-width: 415px;
             font-size: 20px;
             line-height: 120%;
         }
         &-item {
             margin-bottom: 80px;
-            max-width: 429px;
+            max-width: 460px;
             font-size: 18px;
             font-weight: 400;
             line-height: 120%;
+            &.mb-0 {
+                    max-width: 422px;
+                }
+            
         }
         &-btn {
             padding: 17px 48.5px;
@@ -289,6 +295,7 @@
             padding: 16px 25px 18px;
             max-width: calc(50% - 19.5px);
             margin-bottom: 42px;
+            min-height: 220px;
         }
         &-img {
             right: 25px;
