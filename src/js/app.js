@@ -1,6 +1,8 @@
 import Swiper, {Pagination, Navigation} from 'swiper';
 
-
+// import './jquery.event.frame.js';
+// import './jquery.parallax.min.js';
+import './random-dot.js';
 
 Swiper.use([Pagination, Navigation]);
 
@@ -80,6 +82,44 @@ document.addEventListener('DOMContentLoaded', ()=> {
             });
         });
     });
+
+
+    if (window.innerWidth > 992) {
+
+        window.addEventListener("scroll", onScroll);
+
+        function onScroll() {
+            for (var item of document.querySelectorAll(".paralax")) {
+                elementVisible(item);
+            }
+        }
+        
+        function elementVisible(el) {
+            let top = el.offsetTop;
+            let height = el.offsetHeight;
+            let bottom = top + height;
+            let IsOverBottom = top > (window.pageYOffset + window.innerHeight);
+            let IsBeforeTop = bottom < window.pageYOffset;
+            
+            if (!IsOverBottom && !IsBeforeTop) {
+                el.querySelector('.parallax__layer').style.transform = 'translateY(-10%)'
+                el.querySelector('.parallax__layer').style.transition = 'all 10s'
+                // el.classList.add("show");
+                // console.log(el);
+            } else {
+                el.querySelector('.parallax__layer').style.transform = null
+                el.querySelector('.parallax__layer').style.transition = 'all 3s'
+                
+            }
+        }
+
+    }
+
+    
+   
+
+    
+
 })
 
 

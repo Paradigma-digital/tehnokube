@@ -16,6 +16,12 @@
     &-subtitle {
         margin-bottom: 9px;
         font-size: 28px;
+        span {
+            display: none;
+            &.mob {
+                display: inline-block;
+            }
+        }
     }
     &-round {
         margin-bottom: 55.5px;

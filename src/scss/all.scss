@@ -6,6 +6,24 @@
     }
 }
 
+.parallax__layer {
+    transition: all 10s;
+}
+
+.random-dot {
+    position: absolute;
+    z-index: 3;
+    width: 36px;
+    height: 36px;
+    transition: all .3s;
+    opacity: 0;
+    transform: scale(0);
+    &.fadeIn {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .btn {
     background-color: #fff;
     transition: all .3s;
@@ -17,8 +35,90 @@
     }
 }
 
+
 .menu {
     display: none;
+}
+
+.paralax {
+    overflow: hidden;
+}
+
+.img {
+    transition: all .1s;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 234, 255, .5);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1) {
+    width: 36px;
+    height: 36px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2) {
+    left: 10%;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    animation-delay: 0s;
+}
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-2300px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
 }
   
 .acc {
@@ -32,6 +132,9 @@
         color: $text-color;
         &.active {
             margin-top: 40px;
+        }
+        a {
+            color: #0077FF;
         }
         p {
             margin-bottom: 35px;

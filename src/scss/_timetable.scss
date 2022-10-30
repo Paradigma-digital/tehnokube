@@ -1,9 +1,46 @@
 .timetable {
+    position: relative;
     padding-top: 46px;
     padding-bottom: 212px;
-    background-image: url('../img/timetable/bg.svg');
+    // background-image: url('../img/timetable/bg.svg');
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 1;
+    background-color: #fff;
+    overflow: hidden;
+    &::before {
+        // content: '';
+        position: absolute;
+        left: 80px;
+        top: 0;
+        transform: translateY(-100%);
+        width: 100%;
+        height: 160px;
+        max-width: 1040px;
+        background-image: url('../img/main/main-b.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom left;
+    }
+    a {
+        color: #0077FF;
+    }
+    .parallax__layer {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        // width: 100%;
+        // height: 90%;
+        max-width: 90%;
+        z-index: -1;
+        img {
+            position: sticky;
+            top: 0;
+            // width: 100%;
+            // height: 100%;
+            object-fit: cover;
+        }
+    }
     &-desc {
         margin-bottom: 40px;
         max-width: 1044px;
@@ -19,6 +56,9 @@
         line-height: 110%;
         span {
             font-weight: 700;
+            &.mob {
+                display: none;
+            }
         }
     }
     &-round {
@@ -49,8 +89,9 @@
         &-item {
             position: relative;
             width: 100%;
-            max-width: calc(50% - 26.5px);
+            max-width: 507px;
             &:first-child {
+                max-width: 498px;
                 &::before {
                     content: '';
                     position: absolute;
@@ -59,8 +100,6 @@
                     width: 1px;
                     height: 154px;
                     background-color: #C0C0C0;
-                }
-                .timetable-round-list {
                 }
             }
             &:last-child {

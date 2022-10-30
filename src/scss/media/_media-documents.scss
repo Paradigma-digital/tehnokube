@@ -1,9 +1,9 @@
 .documents {
     padding-top: 134px;
     padding-bottom: 115px;
-    background-image: url('../img/documents/bg-mob.jpg');
+    background-image: url('../img/documents/bg-mob-i.jpg');
     background-size: auto 100%;
-    background-position: 49% center;
+    background-position: 44.8% center;
     .section {
         &-title {
             margin-bottom: 22px;
@@ -14,9 +14,9 @@
     }
     &-item {
         max-width: 100%;
-        margin-bottom: 20px;
         min-height: auto;
         a {
+            margin-bottom: 20px;
             max-width: 270px;
             font-size: 16px;
             line-height: 19px;

@@ -1,9 +1,38 @@
 .main {
+    position: relative;
     padding-top: 260px;
     padding-bottom: 390px;
-    background-image: url('../img/main/bg.jpg');
+    background-image: url('../img/main/bg-i.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 1;
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     left: 80px;
+    //     bottom: 0;
+    //     width: 100%;
+    //     height: 160px;
+    //     max-width: 1040px;
+    //     background-image: url('../img/main/main-b.png');
+    //     background-repeat: no-repeat;
+    //     background-size: contain;
+    //     background-position: bottom left;
+    // }
+    .parallax__layer {
+        position: absolute;
+        left: 40px;
+        top: 333px;
+        // width: 100%;
+        height: 100%;
+        z-index: -1;
+        img {
+            // width: 100%;
+            // height: 100%;
+            // transform: translateY(-10%);
+            object-fit: cover;
+        }
+    }
     &-subtitle {
         margin-bottom: 25px;
         max-width: 958px;
@@ -29,7 +58,7 @@
             line-height: 110%;
             color: #fff;
             &::before {
-                content: '';
+                // content: '';
                 position: absolute;
                 left: -26px;
                 top: -7px;

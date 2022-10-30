@@ -1,10 +1,28 @@
 .documents {
+    position: relative;
     padding-top: 182px;
     padding-bottom: 161px;
-    background-image: url('../img/documents/bg.jpg');
+    background-image: url('../img/documents/bg-i.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     color: #fff;
+    z-index: 1;
+    overflow: hidden;
+    .parallax__layer {
+        position: absolute;
+        left: 40px;
+        top: 80px;
+        // width: 100%;
+        // height: 90%;
+        // max-width: 100%;
+        z-index: -1;
+        img {
+            // width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: top;
+        }
+    }
     .section {
         &-title {
             margin-bottom: 85px;
@@ -12,7 +30,7 @@
         }
     }
     &-list {
-        margin-bottom: 169px;
+        margin-bottom: 128px;
         display: flex;
         flex-wrap: wrap;
         &:last-child {
@@ -20,13 +38,13 @@
         }
     }
     &-item {
-        margin-bottom: 41px;
         min-height: 87px;
         width: 100%;
         max-width: 33.33%;
         
         a {
             max-width: 400px;
+            margin-bottom: 41px;
             display: inline-block;
             font-weight: 500;
             font-size: 24px;
@@ -34,7 +52,7 @@
             color: #fff;
             transition: all .3s;
             &:hover {
-                color: #0077FF;
+                color: #00EAFF;
             }
             &:active {
                 color: #fff;

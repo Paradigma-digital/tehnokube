@@ -1,10 +1,12 @@
 .org {
+    position: relative;
     padding-top: 296px;
     padding-bottom: 68px;
-    margin-top: -172px;
+    margin-top: -152px;
     background-image: url('../img/org/bg.svg');
     background-repeat: no-repeat;
     background-position: right top;
+    z-index: 99;
     &-mob, &-md {
         display: none;
     }

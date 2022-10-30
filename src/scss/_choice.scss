@@ -1,16 +1,30 @@
 .choice {
     position: relative;
     padding-top: 220px;
-    padding-bottom: 200px;
-    background-image: url('../img/choice/bg.jpg');
+    padding-bottom: 260px;
+    background-image: url('../img/choice/bg-i.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     color: #fff;
+    z-index: 1;
+    .parallax__layer {
+        position: absolute;
+        left: 56px;
+        top: 160px;
+        // width: 100%;
+        // height: 100%;
+        z-index: -1;
+        img {
+            // width: 100%;
+            // height: 100%;
+            object-fit: contain;
+        }
+    }
     .container {
         position: relative;
         z-index: 1;
         &::before {
-            content: '';
+            // content: '';
             position: absolute;
             left: -98px;
             bottom: 35px;
@@ -26,18 +40,25 @@
     }
     &-list {
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        // justify-content: space-between;
+        // flex-wrap: wrap;
     }
     &-item {
         position: relative;
         margin-bottom: 80px;
         width: 100%;
-        max-width: 560px;
+        max-width: 610px;
         font-weight: 400;
         font-size: 24px;
         line-height: 120%;
         z-index: 99;
+        &:first-child {
+            margin-right: 89px;
+        }
+        span {
+            max-width: 560px;
+            display: inline-block;
+        }
     }
     &-title {
         margin-bottom: 20px;
@@ -50,9 +71,9 @@
     }
     &-img {
         width: 100%;
-        max-width: 55%;
+        max-width: calc(100vw - 46%);
         position: absolute;
-        right: 80px;
+        right: 4.3%;
         bottom: 9%;
         &-mob {
             display: none;

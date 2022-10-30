@@ -1,16 +1,23 @@
 .choice {
     padding-top: 125px;
     padding-bottom: 115px;
-    background-image: url('../img/choice/bg-mob.jpg');
+    background-image: url('../img/choice/bg-mob-i.jpg');
     background-size: auto 100%;
-    background-position: center top;
+    background-position: left 47% top;
     &-title {
         margin-bottom: 12px;
         font-size: 28px;
     }
+    &-list {
+        flex-wrap: wrap;
+    }
     &-item {
+        margin-right: 0;
         margin-bottom: 40px;
         font-size: 16px;
+        &:first-child {
+            margin-right: 0;
+        }
     }
     &-btn {
         background-color: #fff;

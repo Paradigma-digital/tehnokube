@@ -20,12 +20,17 @@
 
 
 @media screen and (max-width: 1440px) {
+
     .section {
         &-title {
             margin-bottom: 30px;
             font-size: 64px;
             line-height: 110%;
         }
+    }
+    .random-dot {
+        width: 20px;
+        height: 20px;
     }
     .container {
         max-width: 981px;
@@ -50,7 +55,7 @@
     .main {
         padding-top: 221px;
         padding-bottom: 203px;
-        background-image: url('../img/main/bg-1440.jpg');
+        background-image: url('../img/main/bg-i.jpg');
         .page {
             &-title {
                 margin-bottom: 9px;
@@ -111,7 +116,7 @@
     .timetable {
         padding-top: 41px;
         padding-bottom: 88px;
-        background-image: url('../img/timetable/bg-1440.svg');
+        // background-image: url('../img/timetable/bg-1440.svg');
         background-position: top 100px center;
         &-title {
             margin-bottom: 38px;
@@ -143,8 +148,9 @@
                 }
             }
             &-item {
-                max-width: calc(50% - 17.5px);
+                max-width: 336px;
                 &:first-child {
+                    max-width: 330px;
                     &::before {
                         height: 102px;
                         right: -17px;
@@ -204,7 +210,7 @@
     .choice {
         padding-top: 158px;
         padding-bottom: 159px;
-        background-image: url('../img/choice/bg-1440.jpg');
+        // background-image: url('../img/choice/bg-1440.jpg');
         .container {
             &::before {
                 display: none;
@@ -216,8 +222,10 @@
             font-size: 20px;
             line-height: 120%;
         }
+        
         &-item {
             margin-bottom: 80px;
+            margin-right: 40px;
             max-width: 460px;
             font-size: 18px;
             font-weight: 400;
@@ -234,9 +242,9 @@
         }
         &-img {
             max-height: 457px;
-            max-width: 676px;
-            right: 117px;
-            bottom: 6.7%;
+            max-width: calc(100vw - 53%);
+            right: 8.0119%;
+            bottom: 9%;
             &::before {
                 display: none;
             }
@@ -247,7 +255,7 @@
     .materials {
         padding-top: 61px;
         padding-bottom: 152px;
-        background-image: url('../img/materials/bg-1440.svg');
+        // background-image: url('../img/materials/bg-1440.svg');
         background-position: bottom 69px left 80px;
         &-item {
             padding: 27px 19px 35px;
@@ -284,7 +292,7 @@
     .capability {
         padding-top: 140px;
         padding-bottom: 240px;
-        background-image: url('../img/capability/bg-1440.jpg');
+        // background-image: url('../img/capability/bg-1440.jpg');
         background-size: 100% 100%;
         .section {
             &-title {
@@ -394,7 +402,7 @@
     .documents {
         padding-top: 141px;
         padding-bottom: 165px;
-        background-image: url('../img/documents/bg-1440.jpg');
+        // background-image: url('../img/documents/bg-1440.jpg');
         background-size: 100% 100%;
         .section {
             &-title {
@@ -402,12 +410,12 @@
             }
         }
         &-list {
-            margin-bottom: 104px;
+            margin-bottom: 74px;
         }
         &-item {
-            margin-bottom: 30px;
             min-height: 66px;
             a {
+                margin-bottom: 30px;
                 font-size: 18px;
                 line-height: 120%;
             }
@@ -419,7 +427,7 @@
     .org {
         padding-top: 239px;
         padding-bottom: 133px;
-        margin-top: -136px;
+        margin-top: -111px;
         background-image: url('../img/org/bg-1440.svg');
         background-size: 507px 396px;
         display: none;
@@ -446,7 +454,7 @@
     .footer {
         padding-top: 216px;
         padding-bottom: 123px;
-        background-image: url('../img/footer/bg-1440.jpg');
+        // background-image: url('../img/footer/bg-i.jpg');
         background-size: 100% 100%;
         .container {
             max-width: 957px;
@@ -536,7 +544,9 @@
 
 
 
-
+    .menu-desc-item {
+        display: none !important;
+    }
 
 }
 
@@ -544,6 +554,11 @@
 
 
 @media screen and (max-width: 992px) {
+    
+    
+    .parallax__layer {
+        display: none;
+    }
     .burger-menu {
         display: block;
         cursor: pointer;
@@ -616,7 +631,7 @@
         }
     }
     .container {
-        max-width: 375px;
+        max-width: 450px;
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -648,7 +663,7 @@
         padding-bottom: 68px;
         background-image: url('../img/footer/bg-mob.jpg');
         background-size: auto 100%;
-        background-position: top top;
+        background-position: top center;
         .container {
             max-width: 375px;
             padding-left: 30px;

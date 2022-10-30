@@ -27,6 +27,9 @@
         color: $text-color;
         background-color: #fff;
         border: 1px solid $text-color;
+        &:hover {
+            background-color: #0077FF;
+        }
     }
     &-content {
         display: flex;

@@ -6,15 +6,24 @@
 <body>
     @@include('html/header.html')
     @@include('html/main.html')
+
+    <!-- <section class="parallax">
+        <div class="parallax__layer">
+            
+        <img src="img/main/bg.png" alt="">
+        </div>
+        <div class="parallax__layer"></div>
+        <div class="parallax__layer"></div>
+      </section> -->
     
-    <section class="timetable" id="timetable">
+    <section class="timetable" id="timetable" data-dots="">
         <div class="container">
             <h2 class="section-title">
                 Расписание
             </h2>
             <!-- /.section-title -->
-            <div class="timetable-desc">
-                В 2022/23 учебном году олимпиада Технокубок включена Министерством науки и высшего образования Российской Федерации в Перечень олимпиад школьников как Олимпиада 2 уровня. Победители и призёры Технокубка получают льготы при поступлении в ВУЗ. Ознакомиться с Приказом № 828 от 30.08.2022 «Об утверждении перечня олимпиад школьников и их уровней на 2022/23 учебный год» можно здесь.
+            <div class="timetable-desc d-none d-lg-block">
+                В 2022/23 учебном году олимпиада Технокубок включена Министерством науки и высшего образования Российской Федерации в Перечень олимпиад школьников как Олимпиада 2 уровня. Победители и призёры Технокубка получают льготы при поступлении в ВУЗ. Ознакомиться с Приказом № 828 от 30.08.2022 «Об утверждении перечня олимпиад школьников и их уровней на 2022/23 учебный год» можно <a href="#">здесь</a>.
             </div>
             <!-- /.timetable-desc -->
             <div class="timetable-desc">Время указано в формате МСК (GMT +3)</div>
@@ -27,7 +36,8 @@
                 <div class="col-lg-12">
                     <div class="timetable-subtitle">
                         Раунд 1 — 
-                        <span>октябрь*22</span>
+                        <span>октябрь 2022</span>
+                        <span class="mob">октябрь*22</span>
                     </div>
                     <!-- /.timetable-subtitle -->
                     <div class="timetable-round">
@@ -91,7 +101,8 @@
                     <div class="timetable-round">
                         <div class="timetable-subtitle">
                             Раунд 2 — 
-                            <span>ноябрь*22</span>
+                            <span>ноябрь 2022</span>
+                            <span class="mob">ноябрь*22</span>
                         </div>
                         <!-- /.timetable-subtitle -->
                         <div class="timetable-round-item">
@@ -153,7 +164,8 @@
                 <div class="col-lg-12">
                     <div class="timetable-subtitle">
                         Раунд 3 — 
-                        <span>декабрь*22</span>
+                        <span>декабрь 2022</span>
+                        <span class="mob">декабрь*22</span>
                     </div>
                     <!-- /.timetable-subtitle -->
                     <div class="timetable-round">
@@ -220,6 +232,7 @@
                 <div class="timetable-subtitle">
                     Финал — 
                     <span>февраль 2023</span>
+                    <span class="mob">февраль 2023</span>
                 </div>
                 <!-- /.timetable-subtitle -->
                 <div class="timetable-final">
@@ -254,12 +267,26 @@
             
         </div>
         <!-- /.container -->
+        
+    
+        
+        <div class="random-dot"></div>
+        <!-- /.random-dot -->
+        <div class="random-dot"></div>
+        <!-- /.random-dot -->
+        <div class="random-dot"></div>
+        <!-- /.random-dot -->
+        <div class="random-dot"></div>
+        <!-- /.random-dot -->
+        <div class="random-dot"></div>
+        <!-- /.random-dot -->
+        
     </section>
     <!-- /.timetable -->
-    <section class="choice">
+    <section class="choice paralax">
         <div class="container">
             <div class="choice-img-mob">
-                <img src="img/choice/mob.png" alt="">
+                <img src="img/choice/mob-i.png" alt="">
             </div>
             <!-- /.choice-img-mob -->
             <div class="choice-list">
@@ -287,7 +314,7 @@
                         Финальный этап запланирован на февраль-март 2023 года
                     </div>
                     <!-- /.choice-title -->
-                    В зависимости от эпидемиологической обстановки, финальный этап Технокубка пройдёт очно или в комбинированном формате с применением дистанционных технологий. Информация о точном формате и дате проведения финала Олимпиады появится на нашем сайте позднее.
+                    <span>В зависимости от эпидемиологической обстановки, финальный этап Технокубка пройдёт очно или в комбинированном формате с применением дистанционных технологий. Информация о точном формате и дате проведения финала Олимпиады появится на нашем сайте позднее.</span>
                     <div class="choice-bottom">
                         <button class="btn choice-btn">Зарегистрироваться</button>
                         <!-- /.btn choice-btn -->
@@ -304,11 +331,15 @@
             <img src="img/choice/1.png" alt="">
         </div>
         <!-- /.choice-img -->
+        <div class="parallax__layer">
+            <img src="img/choice/bg.png" alt="">
+        </div>
     </section>
     <!-- /.choice -->
 
 
     <section class="materials" id="materials">
+        
         <div class="container">
             <h2 class="section-title">
                 Материалы прошлых лет
@@ -317,42 +348,7 @@
             <div class="materials-slider">
                 <div class="materials-slider-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="materials-item">
-                                <div class="materials-top">
-                                    Олимпиада
-                                    <span>
-                                        2015/2016
-                                    </span>
-                                </div>
-                                <!-- /.materials-top -->
-                                <div class="materials-btns">
-                                    <a href="#">Скачать задачи</a>
-                                    <a href="#">Скачать разбор</a>
-                                </div>
-                                <!-- /.materials-btns -->
-                            </div>
-                            <!-- /.materials-item -->
-                        </div>
-                        <!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <div class="materials-item">
-                                <div class="materials-top">
-                                    Олимпиада
-                                    <span>
-                                        2017/2018
-                                    </span>
-                                </div>
-                                <!-- /.materials-top -->
-                                <div class="materials-btns">
-                                    <a href="#">Скачать задачи</a>
-                                    <a href="#">Скачать разбор</a>
-                                </div>
-                                <!-- /.materials-btns -->
-                            </div>
-                            <!-- /.materials-item -->
-                        </div>
-                        <!-- /.swiper-slide -->
+                        
                         <div class="swiper-slide">
                             <div class="materials-item">
                                 <div class="materials-top">
@@ -376,25 +372,7 @@
                                 <div class="materials-top">
                                     Олимпиада
                                     <span>
-                                        2015/2016
-                                    </span>
-                                </div>
-                                <!-- /.materials-top -->
-                                <div class="materials-btns">
-                                    <a href="#">Скачать задачи</a>
-                                    <a href="#">Скачать разбор</a>
-                                </div>
-                                <!-- /.materials-btns -->
-                            </div>
-                            <!-- /.materials-item -->
-                        </div>
-                        <!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <div class="materials-item">
-                                <div class="materials-top">
-                                    Олимпиада
-                                    <span>
-                                        2015/2016
+                                        2017/2018
                                     </span>
                                 </div>
                                 <!-- /.materials-top -->
@@ -465,11 +443,21 @@
             <!-- /.materials-slider -->
         </div>
         <!-- /.container -->
+        
+        
+        <div class="random-dot"></div>
+        <!-- /.random-dot -->
+        <div class="random-dot"></div>
+        <!-- /.random-dot -->
+        <div class="random-dot"></div>
+        <!-- /.random-dot -->
+        <div class="random-dot"></div>
+        <!-- /.random-dot -->
     </section>
     <!-- /.materials -->
     
 
-    <section class="capability" id="capability">
+    <section class="capability paralax" id="capability">
         <div class="container">
             <h2 class="section-title">
                 Преимущества <br> участия в Технокубке
@@ -532,6 +520,15 @@
             <!-- /.capability-list -->
         </div>
         <!-- /.container -->
+        
+        <div class="parallax__layer">
+            <img src="img/capability/bg.png" alt="" class="img" data-speed="1">
+        </div>
+        
+        <div class="random-dot"></div>
+        <!-- /.random-dot -->
+        <div class="random-dot"></div>
+        <!-- /.random-dot -->
     </section>
     <!-- /.capability -->
 
@@ -620,7 +617,7 @@
                             <!-- /.acc-btn -->
                             <div class="acc-content">
                                 <p>
-                                    Этапы будут проходить по правилам Codeforces. Подробнее можете прочитать здесь. Убедительная просьба ознакомиться с ними до начала онлайн-этапа. Если вы в первый раз участвуете в соревнованиях Codeforces, просьба решить задачу для примера на одном из Ознакомительных раундов. Ознакомительные раунды проходят за несколько дней перед каждым Отборочным раундом.
+                                    Этапы будут проходить по правилам <a href="https://codeforces.com/"> Codeforces.</a> Подробнее можете прочитать <a href="#">здесь</a>. Убедительная просьба ознакомиться с ними до начала онлайн-этапа. Если вы в первый раз участвуете в соревнованиях <a href="https://codeforces.com/">Codeforces,</a>  просьба решить задачу для примера на одном из Ознакомительных раундов. Ознакомительные раунды проходят за несколько дней перед каждым Отборочным раундом.
                                 </p>
                                 <p>
                                     Правила проведения финального этапа будут сообщены позднее.
@@ -672,7 +669,7 @@
 
 
 
-    <section class="documents" id="documents">
+    <section class="documents paralax" id="documents">
         <div class="container">
             <h2 class="section-title">
                 Полезные документы
@@ -708,63 +705,30 @@
                     <a href="#">
                         Список победителей и призёров Технокубка 2021/2022
                     </a>
+                    <a href="#">
+                        Работы победителей и призёров заключительного этапа 2021/2022
+                    </a>
+                    <a href="#">
+                        Условия первого отборочного раунда Технокубка 2021/2022
+                    </a>
+                    <a href="#">
+                        Разбор первого отборочного раунда Технокубка 2021/2022
+                    </a>
+                    <a href="#">
+                        Список призеров первого отборочного раунда Технокубок 2021/2022
+                    </a>
                 </div>
                 <!-- /.documents-item -->
                 <div class="documents-item">
                     <a href="#">
                         Условия второго отборочного раунда Технокубка 2021/2022
                     </a>
-                </div>
-                <!-- /.documents-item -->
-                <div class="documents-item">
-                    <a href="#">
-                        Условия третьего отборочного раунда Технокубка 2021/2022
-                    </a>
-                </div>
-                <!-- /.documents-item -->
-                <div class="documents-item">
-                    <a href="#">
-                        Работы победителей и призёров заключительного этапа 2021/2022
-                    </a>
-                </div>
-                <!-- /.documents-item -->
-                <div class="documents-item">
                     <a href="#">
                         Разбор второго отборочного раунда Технокубка 2021/2022
                     </a>
-                </div>
-                <!-- /.documents-item -->
-                <div class="documents-item">
-                    <a href="#">
-                        Разбор третьего отборочного раунда Технокубка 2021/2022
-                    </a>
-                </div>
-                <!-- /.documents-item -->
-                <div class="documents-item">
-                    <a href="#">
-                        Условия первого отборочного раунда Технокубка 2021/2022
-                    </a>
-                </div>
-                <!-- /.documents-item -->
-                <div class="documents-item">
                     <a href="#">
                         Список призеров второго отборочного раунда Технокубок 2021/2022
                     </a>
-                </div>
-                <!-- /.documents-item -->
-                <div class="documents-item">
-                    <a href="#">
-                        Условия финального этапа Технокубка 2021/2022
-                    </a>
-                </div>
-                <!-- /.documents-item -->
-                <div class="documents-item">
-                    <a href="#">
-                        Разбор первого отборочного раунда Технокубка 2021/2022
-                    </a>
-                </div>
-                <!-- /.documents-item -->
-                <div class="documents-item">
                     <a href="#">
                         Список призеров третьего отборочного раунда Технокубок 2021/2022
                     </a>
@@ -772,13 +736,16 @@
                 <!-- /.documents-item -->
                 <div class="documents-item">
                     <a href="#">
-                        Разбор финального этапа Технокубка 2021/2022
+                        Условия третьего отборочного раунда Технокубка 2021/2022
                     </a>
-                </div>
-                <!-- /.documents-item -->
-                <div class="documents-item">
                     <a href="#">
-                        Список призеров первого отборочного раунда Технокубок 2021/2022
+                        Разбор третьего отборочного раунда Технокубка 2021/2022
+                    </a>
+                    <a href="#">
+                        Условия финального этапа Технокубка 2021/2022
+                    </a>
+                    <a href="#">
+                        Разбор финального этапа Технокубка 2021/2022
                     </a>
                 </div>
                 <!-- /.documents-item -->
@@ -786,6 +753,19 @@
             <!-- /.documents-list -->
         </div>
         <!-- /.container -->
+        <div class="parallax__layer">
+            <img src="img/documents/bg.png" alt="" class="img" data-speed="11">
+        </div>
+        
+        <div class="random-dot"></div>
+        <!-- /.random-dot -->
+        <div class="random-dot"></div>
+        <!-- /.random-dot -->
+        
+        <div class="random-dot"></div>
+        <!-- /.random-dot -->
+        <div class="random-dot"></div>
+        <!-- /.random-dot -->
     </section>
     <!-- /.documents -->
 
@@ -825,7 +805,7 @@
         <!-- /.container -->
     </section>
     <!-- /.org -->
-    <section class="org org-md" id="org">
+    <section class="org org-md" id="org-md">
         <div class="container">
             <h2 class="section-title">
                 Организаторы
@@ -861,7 +841,7 @@
         <!-- /.container -->
     </section>
     <!-- /.org -->
-    <section class="org org-mob" id="org">
+    <section class="org org-mob" id="org-mob">
         <div class="container">
             <h2 class="section-title">
                 Организаторы
