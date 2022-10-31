@@ -116,7 +116,7 @@
             &::before {
                 content: '';
                 position: absolute;
-                left: 50%;
+                left: 42%;
                 bottom: 6px;
                 width: 1px;
                 height: 132px;
@@ -133,8 +133,9 @@
             }
         }
         &-info {
-            width: 50%;
+            width: 41%;
             &:last-child {
+                width: 59px;
                 padding-left: 32px;
             }
         }
